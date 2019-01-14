@@ -1,24 +1,13 @@
-<<<<<<< HEAD
 <h1>Welcome, <%= @user.username %></h1>
 
 <br>
 
 <% @tweets.each do |tweet| %>
-=======
-<h1>Welcome, <%= Helpers.current_user(session).username %></h1>
-
-<br>
-
-<%= @tweets.each do |tweet| %>
->>>>>>> d024950923d9d8e42e92cb3cd326304a1409d2d6
   <h3><%= tweet.user.username %>: <%= tweet.content %></h3>
   <br>
 <% end %>
 
-<<<<<<< HEAD
 <br>
 
-=======
->>>>>>> d024950923d9d8e42e92cb3cd326304a1409d2d6
 
 <p><a href="/logout">Log Out</a></p>
